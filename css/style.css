@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'digital-7';
+    src: url("../font/digital-7.ttf");
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: green;
+    background-color: skyblue;
+    
+    max-width: 100%;
+    font-size: 10px;
+    font-family: 'digital-7', sans-serif;
+}
+.evening{
+    background: linear-gradient(0deg, rgb(225, 106, 74), rgb(225, 144, 74), rgb(213, 230, 55))fixed  no-repeat;
+}
+.dark{
+    background-color: #000;
+    transition: background 0.5s ease;
+}
+.my-clock{
+    position: absolute;
+    /* font-family: 'Orbitron', sans-serif;*/
+    margin-top: -5%; 
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    max-width: 450px;
+    background-color: #050e18;
+    font-size: 1.6em;
+    text-align: center;
+    transform: translate(-50%);            
+    padding:5% 10px;
+}
+#jsClock{
+    display: inline;
+    font-weight: 400;
+    
+}
+#jsDay{
+    font-style: italic;
+}
+#period{
+    font-size: 1em;
+    margin-left: 0.5em;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px 25px;
+    float: right;
+    border: 1px solid transparent;
+}
+
+.sun{
+    background-color: rgb(255, 230, 94);
+    border: 5px solid rgb(240, 195, 15);
+    box-shadow:  0 0 80px 15px rgba(235, 188, 3, 0.959);
+    transition: background 0.5 ease-in;
+}
+
+.moon{
+    background-color: rgb(190, 195, 200);
+    border: 1px solid rgb(234, 239, 242);
+    box-shadow: 0 0 20px 2px rgba(234, 239, 242, 0.8);
+    transition: background 0.5 ease-in;
+}
+
+
+@media (min-width: 768px){
+    .my-clock{
+        font-size: 3.5em;
+        margin-top: -140px;
+    }
+}
