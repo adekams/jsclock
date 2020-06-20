@@ -12,13 +12,6 @@ body{
     font-size: 10px;
     font-family: 'digital-7', sans-serif;
 }
-.evening{
-    background: linear-gradient(0deg, rgb(225, 106, 74), rgb(225, 144, 74), rgb(213, 230, 55))fixed  no-repeat;
-}
-.dark{
-    background-color: #000;
-    transition: background 0.5s ease;
-}
 .my-clock{
     position: absolute;
     /* font-family: 'Orbitron', sans-serif;*/
@@ -31,7 +24,7 @@ body{
     font-size: 1.6em;
     text-align: center;
     transform: translate(-50%);            
-    padding:5% 10px;
+    padding: 40px 10px;
 }
 #jsClock{
     display: inline;
@@ -44,6 +37,13 @@ body{
 #period{
     font-size: 1em;
     margin-left: 0.5em;
+}
+.evening{
+    background: linear-gradient(0deg, rgb(225, 106, 74), rgb(225, 144, 74), rgb(213, 230, 55))fixed  no-repeat;
+}
+.dark{
+    background-color: #000;
+    transition: background 0.5s ease-in;
 }
 
 .circle{
@@ -68,7 +68,6 @@ body{
     box-shadow: 0 0 20px 2px rgba(234, 239, 242, 0.8);
     transition: background 0.5 ease-in;
 }
-
 
 @media (min-width: 768px){
     .my-clock{
