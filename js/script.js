@@ -22,10 +22,10 @@ function myClock() {
     if(hr < 7 || hr >= 20){
         document.body.classList.add("dark")
         //document.body.classList.remove("evening")
-        //document.getElementById("circle").classList.add("moon")
+        document.getElementById("circle").classList.add("moon")
         document.getElementById("circle").classList.remove("sun")    
     }
-    else if(hr > 18 && hr < 20){
+    else if(hr >= 18 && hr < 20){
         document.body.classList.add("evening")
         document.getElementById("circle").classList.add("sun")
     }
