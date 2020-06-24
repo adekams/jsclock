@@ -1,4 +1,4 @@
-var dayNames = ["Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday", "Sunday"]
+var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday"]
 function myClock() {
     //get current date and from it, extract current hour, current minute and current second
     var date = new Date();
@@ -6,7 +6,7 @@ function myClock() {
     var min = date.getMinutes();
     var sec = date.getSeconds();
     var period = '';
-    var day = date.getDay();
+    var day = date.getDate();
     var month = date.getMonth();
     var year = date.getFullYear();   
 
