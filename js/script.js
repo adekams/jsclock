@@ -7,7 +7,7 @@ function myClock() {
     var sec = date.getSeconds();
     var period = '';
     var day = date.getDate();
-    var month = date.getMonth();
+    var month = date.getMonth() + 1;
     var year = date.getFullYear();   
 
     //if hr less than 10, hr = 0 + hr, if not, hr = hr
